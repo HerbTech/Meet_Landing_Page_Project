@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;  
+}
+
+.logo{
+    margin-top: 80px
+}
+
+.logo svg{
+    display: block;
+    margin: auto;
+}
+
+ .banner{
+    overflow: hidden;
+    margin-top: 61px;
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 358px;
+}
+
+.bannerText{
+    width: 540px;
+    height: 304px;
+    margin: 50px 15px 0px;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+.bannerText h1{
+    font-size: 64px;
+    font-weight: 900;
+    line-height: 64px;
+    width: 445px;
+    height: 128px;
+    margin: auto;
+    text-align: center;
+    color: #28283D;
+}
+
+.bannerText p{
+    color:#87879D;
+    font-family: 'Red Hat Display', sans-serif;
+    text-align: center;
+    margin: 34px 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.hero1{
+    position: relative;
+    right: 32px;
+}
+
+.hero2{
+    position: relative;
+    left: 37px;
+    top: 50px;
+}
+
+
+
+
+
+
