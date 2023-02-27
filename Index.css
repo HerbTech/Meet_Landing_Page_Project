@@ -22,14 +22,14 @@ body{
     overflow: hidden;
     margin-top: 61px;
     width: 100%;
-    height: 358px;
+    height: 368px;
+    justify-content: space-between;
 }
 
 .bannerText{
     width: 547px;
     height: 304px;
     margin: 50px 25px 0px;
-    display: inline-block;
 }
 
 .bannerText h1{
@@ -52,19 +52,25 @@ body{
     line-height: 26px;
     padding: 0px;
     width: 100%;
+    
 }
 
 .hero1{
     position: relative;
     right: 32px;
-    width: 400px;
+
 }
+
+.hero1, .hero2, .bannerText {
+    flex-grow: 1;
+}
+
 
 .hero2{
     position: relative;
     left: 32px;
     top: 60px;
-    width: 400px;
+
 }
 
 .hero1 img, .hero2 img{
@@ -185,7 +191,7 @@ body{
     color: #4D96A9;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 5px;
+    letter-spacing: 4px;
     font-size: 18px;
 
  }
@@ -289,11 +295,6 @@ body{
         margin-top: 50px;
     }
 
-
-    .imageTile{
-        width: 300px;
-    }
-    
     .banner{
         display: grid;
         grid-template-columns: 210px 210px;
@@ -363,8 +364,8 @@ body{
     .imageTile{
         width: 327px;
         height: 310px;
-        margin-top: 64px;
         flex-wrap: wrap;
+        row-gap: 24px;
     }
 
     .imageTile div{
@@ -431,7 +432,169 @@ body{
 
     .action_button3{
         margin-top: 32px;
+    }
 
+}
+
+/* TABLETS */
+
+@media only screen and (min-width: 481px)  and (max-width: 768px) {
+/* @media only screen and (min-width: 481px) { */
+
+    .logo{
+        margin-top: 50px;
+    }
+    
+    .banner{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        height: 700px;
+        overflow: hidden;
+        justify-items: center;
+        justify-content: center;
+        margin-top: 64px;
+        /* border: 1px solid red; */
+    }
+
+    .hero1, .hero2{
+        width: 400px;
+        height: 170px;
+        margin: 0px;
+
+    }
+
+    .hero1{
+        order: 1;
+        right: 20px;
+    }
+
+    .hero2{
+        order: 2;
+        top: 0px;
+        left: 20px;
+    }
+
+    .hero1 img, .hero2 img{
+        width: 100%;    
+    }
+
+    .bannerText{
+        width: 457px;
+        height: 300px;
+        margin: 250px 56px;
+        order: 3;
+        column-span: 420px;
+        grid-row: 2;
+        grid-column: 1 / 3;
+    }
+
+    .bannerText h1{
+        font-size: 48px;
+        line-height: 48px;
+    } 
+
+    .bannerText p{
+        font-size: 16px;
+        line-height: 26px;
+        padding: 0 7px 0;
+        margin: 0px;
+
+     } 
+
+     .action_button{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 32px;
+     }
+
+  
+    .action_button2{
+        margin: 0 0 0 16px;
+
+    }
+
+     .separator{
+        margin-top: 7em;        
+     }
+
+    .imageTile{
+        width: 689px;
+        height: 156px;
+        margin-top: 67px;
+    }
+
+    .imageTile div{
+        max-width: 164px;
+        height: 156px;
+    }
+
+    .middleText{
+        width: 573px;
+
+    }
+
+    .middleText h3{
+        font-size: 16px;
+    }
+
+    .middleText h1{
+        font-size: 40px;
+        line-height: 44px;
+        width: 100%;
+        margin-top: 16px;
+        padding: 0px 60px 0;
+    }
+
+    .middleText p{
+        font-size: 16px;
+        line-height: 26px;
+        margin-top: 32px;
+        text-align: center;
+        padding: 0px;
+    }
+
+    footer{
+        height: 428px;
+        background-image: url(./assets/tablet/image-footer.jpg);
+    }
+    
+    #seperatorFooter{
+        margin-top: 120px;
+    }
+
+    .footerText{
+        padding-top: 92px;
+
+    }
+    
+    
+    .footerText > div{
+        flex-direction: column;
+        width: 457px;
+
+    }
+
+    .footerText div h1{
+        font-size: 40px;
+        line-height: 44px;
+        text-align: center;
+        width: 100%;
+        margin: 0px;
+
+    }
+
+    .footerText div p{
+        text-align: center;
+        width: 573px;
+        margin: 32px 0 0 0;
+        padding: 0px;
+
+    }
+
+    .action_button3{
+        margin-top: 32px;
     }
 
 }
