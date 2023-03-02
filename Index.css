@@ -434,7 +434,7 @@ body{
 
 /* TABLETS */
 
-@media only screen and (min-width: 769px) and (max-width: 1200px){
+@media only screen and (min-width: 768px) and (max-width: 1200px){
 
     .logo{
         margin-top: 50px;
